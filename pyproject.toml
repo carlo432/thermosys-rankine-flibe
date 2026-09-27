@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "thermosys"
+version = "0.2.0"
+description = "Modular thermodynamic system simulation: water Rankine cycles and FLiBe coolant loops"
+requires-python = ">=3.10"
+dependencies = ["CoolProp>=8", "numpy", "scipy", "matplotlib"]
+
+[tool.setuptools.packages.find]
+include = ["thermosys*"]
