@@ -38,8 +38,8 @@ rather than a rewrite.
 Full tables are in [docs/RESULTS.md](docs/RESULTS.md).
 
 <p align="center">
-  <img src="runs/sweep_reheat_pressure.png" width="45%" alt="Reheat pressure sweep">
-  <img src="runs/scenario_coastdown.png" width="45%" alt="Pump coastdown transient">
+  <img src="runs/sweep_reheat_pressure.png?v=2" width="45%" alt="Reheat pressure sweep">
+  <img src="runs/scenario_coastdown.png?v=2" width="45%" alt="Pump coastdown transient">
 </p>
 
 ## Verification
