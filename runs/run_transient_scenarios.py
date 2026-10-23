@@ -119,8 +119,9 @@ def scenario_coastdown():
              markeredgecolor="#fcfcfb", markeredgewidth=2)
     # still climbing at t_final: this is the maximum in the window, not a turning point
     ax1.annotate(f"max in window {peak:.1f} K", xy=(t_peak, peak),
-                 xytext=(-12, -16), textcoords="offset points", ha="right",
+                 xytext=(-12, 4), textcoords="offset points", ha="right", va="bottom",
                  fontsize=8, color="#52514e")
+    ax1.set_ylim(top=peak + 15)
     style(ax1, "Pump coastdown: core outlet rises as flow decays", xlabel="")
     ax2.plot(t, mdot, color=SERIES[1], lw=2)
     style(ax2, "", ylabel="mdot [kg/s]")

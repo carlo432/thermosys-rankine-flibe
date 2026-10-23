@@ -97,7 +97,7 @@ def reheat_pressure_sweep():
     ax.set_ylim(top=max(etas.max(), regen) + 0.004)
     style(ax, "Reheat pressure optimum, 8 MPa / 500 C / 10 kPa",
           "reheat pressure [MPa]", "thermal efficiency")
-    ax.legend(frameon=False, fontsize=9, loc="lower center")
+    ax.legend(frameon=False, fontsize=8.5, loc="upper center", bbox_to_anchor=(0.5, -0.16), ncol=3)
     fig.tight_layout()
     fig.savefig(OUT / "sweep_reheat_pressure.png", dpi=160, facecolor="#fcfcfb")
     plt.close(fig)
